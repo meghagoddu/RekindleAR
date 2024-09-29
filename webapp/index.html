@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload an Image to RekindleAR for Image Classification</h1>
+        <form id="upload-form">
+            <input type="file" id="file-input" accept="image/*">
+            <button type="button" id="upload-btn">Upload Image</button>
+        </form>
+
+        <!-- New button and message area -->
+        <button id="cloud-db-btn" type="button" style="display: none;">Send to Cloud Database</button>
+        <p id="cloud-message" class="message" style="display: none;">Sent to cloud database using Terraform.</p>
+
+        <!-- Image container for uploaded and hardcoded images -->
+        <div class="image-container">
+            <div class="uploaded-image-box">
+                <h2>Uploaded Image</h2>
+                <img id="image-preview" src="#" alt="Image Preview" style="display: none;">
+            </div>
+
+            <!-- Hardcoded image box (initially hidden) -->
+            <div class="hardcoded-image-container" style="display: none;">
+                <h2>Classified Image</h2>
+                <img src="img3.png" alt="Hardcoded Image" class="hardcoded-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

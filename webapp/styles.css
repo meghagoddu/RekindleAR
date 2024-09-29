@@ -1,0 +1,57 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #800080; /* Purple background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #6a006a; /* Darker purple on hover */
+}
+
+button:active,
+button:focus {
+    background-color: white; /* White background when clicked */
+    color: #800080; /* Purple text color when clicked */
+    border: 2px solid #800080; /* Purple border for focus/active state */
+}
+
+.image-container {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: space-between; /* Space out the boxes */
+    margin-top: 20px; /* Space above the image boxes */
+}
+
+.uploaded-image-box, .hardcoded-image-container {
+    width: 45%; /* Adjust width as needed */
+    border: 2px solid #800080; /* Purple border for the box */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.uploaded-image-box img, .hardcoded-image {
+    max-width: 100%; /* Ensure the image fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: round corners */
+}
