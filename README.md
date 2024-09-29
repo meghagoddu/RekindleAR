@@ -103,7 +103,7 @@ The journey doesn't end here! Our future plans for *RekindleAR* include:
 ---
 
 ## 🛠 Built With
-**Languages**: Python, Swift, HTML, CSS, JS  
+**Languages**: Python, Swift, HTML, CSS, JavaScript, TypeScript  
 **Frameworks**: PyTorch, OpenCV, SwiftUI, Lens Studio  
 **Platforms**: iOS, Web app  
 **Cloud Services**: Terraform  
